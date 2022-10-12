@@ -7,7 +7,7 @@ private double y2-represents the corresponding y-coordinate according to x2
 
 Constructor:
 public LinearEquation(int x, int y)
-public linearEquation(int x2)
+public LinearEquation(int x2)
 
 Methods:
 public double CalculateDistance()
@@ -43,4 +43,4 @@ e.the distance between two points
 
 5.calculate the y-coordinate by using slope-intercept form
 
-6.prints out the point(x2,y2)
+6.prints out the point(x2,y2) alone with step 3.
