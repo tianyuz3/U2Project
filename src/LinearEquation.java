@@ -21,16 +21,19 @@ public class LinearEquation {
         return d;
     }
 
-    public double calcInfo(){
+    public double calcSlope(){
         double s= (y2-y)/(x2-x);
-        double yin=y-s*x;
         return s;
+
+    }
+    public double calcYInt(){
+        double yin=y-calcSlope()*x;
         return yin;
     }
 public String toString(){
 
         String infoc="First Pair: (" + x + "," + y + ")\n" + "Second Pair: (" + x + "," + y + ")";
-        String infos="Slope of line:" + 
+        String infos="Slope of line:" + calcSlope();
 
 
 }
