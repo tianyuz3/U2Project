@@ -41,6 +41,6 @@ e.the distance between two points
 
 4. ask the user to enter an x-value(instance variable x2)
 
-5.calculate the y-coordinate by using slope-intercept form
+5.calculate the y-coordinate by using slope-intercept form.
 
 6.prints out the point(x2,y2) alone with step 3.
