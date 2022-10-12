@@ -1,0 +1,46 @@
+LinearEquation class
+Instance variables:
+private int x- variable that represent the first x-coordinate
+private int y- represents the y-coordinate
+private double x2-represents the second x-coordinate
+private double y2-represents the corresponding y-coordinate according to x2
+
+Constructor:
+public LinearEquation(int x, int y)
+public linearEquation(int x2)
+
+Methods:
+public double CalculateDistance()
+This method will calculate the distance between the x and y coordinates.
+Return the result to the nearest hundredth as a double
+
+public double CalculateInfo()
+This method will calculate the slope and the y-intercept of the linear equation
+Return results to the nearest hundredth as a double
+
+public String toString()
+This method puts the local variables(y-intercept, slope) into a slope-intercept form.
+This method can return the x and y coordinate,slope, y-intercept,the distance between the two points,and the equation of the line in slope-intercept form as a String.
+
+public String CalculateCoordinatePoint()
+This method calculate the coordinate point corresponding to the instance variable x-2
+Return the result as a string.
+
+
+EquationRunner.java
+1.Welcome the user, and ask them to enter first coordinate pair in coordinate form(String)
+
+2.Create a new LinearEquation object.
+
+3.Calculate and print the following:
+a.The two original points
+b.the equation of the line in slope-intercept form
+c.the slope
+d.the y-intercept
+e.the distance between two points
+
+4. ask the user to enter an x-value(instance variable x2)
+
+5.calculate the y-coordinate by using slope-intercept form
+
+6.prints out the point(x2,y2)
