@@ -30,12 +30,21 @@ public class LinearEquation {
         double yin=y-calcSlope()*x;
         return yin;
     }
-public String toString(){
+    public String toString(){
 
-        String infoc="First Pair: (" + x + "," + y + ")\n" + "Second Pair: (" + x + "," + y + ")";
-        String infos="Slope of line:" + calcSlope();
+        String infoC="First Pair: (" + x + "," + y + ")\n" + "Second Pair: (" + x + "," + y + ")";
+        String infoS="Slope of line: " + calcSlope();
+        String infoY="Y-intercept: " + calcYInt();
+        String infoSl="Slope intercept form: " + "y= " + calcSlope() + "/" + "x +" + calcYInt();
+        String infoD="The distance between points: " + calcDistance();
+        return infoC + infoS + infoY + infoSl+infoD;
 
 
 }
 
+    public String calcCP(){
+        double c= calcSlope()*x3+calcYInt();
+        String cP="Solved coordinate point is: " + "(" + x3 + "," + c + ")";
+        return cP;
+    }
 }
