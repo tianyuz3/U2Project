@@ -12,7 +12,11 @@ public class LinearEquation {
         this.x2= x2;
         this.y2= y2;
     }
-    public LinearEquation(double x3){
+    public LinearEquation(int x, int y, int x2, int y2, double x3){
+        this.x= x;
+        this.y= y;
+        this.x2= x2;
+        this.y2= y2;
         this.x3=x3;
     }
 
@@ -21,22 +25,28 @@ public class LinearEquation {
         return d;
     }
 
-    public double calcSlope(){
-        double s= (y2-y)/(x2-x);
+    public double calcSlope() {
+        double s = (y2 - y) / (x2 - x);
         return s;
-
     }
-    public double calcYInt(){
-        double yin=y-calcSlope()*x;
+        public String slope(){
+            int dX=x2-x;
+            int dY=y2-y;
+            String s= dY + "/" + dX;
+            return s;
+        }
+
+    public int calcYInt(){
+        int yin=(int)(y-calcSlope()*x);
         return yin;
     }
     public String toString(){
 
-        String infoC="First Pair: (" + x + "," + y + ")\n" + "Second Pair: (" + x + "," + y + ")";
-        String infoS="Slope of line: " + calcSlope();
-        String infoY="Y-intercept: " + calcYInt();
-        String infoSl="Slope intercept form: " + "y= " + calcSlope() + "/" + "x +" + calcYInt();
-        String infoD="The distance between points: " + calcDistance();
+        String infoC="First Pair: (" + x + "," + y + ")\n" + "Second Pair: (" + x2 + "," + y2 + ")\n";
+        String infoS="Slope of line: " + calcSlope() + "\n";
+        String infoY="Y-intercept: " + calcYInt() + "\n";
+        String infoSl="Slope intercept form: " + "y= " +  slope()  + "x + " + calcYInt() + "\n";
+        String infoD="The distance between points: " + String.format("%.2f",calcDistance())  + "\n";
         return infoC + infoS + infoY + infoSl+infoD;
 
 
