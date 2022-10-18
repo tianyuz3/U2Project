@@ -8,22 +8,32 @@ private double x3-represent the user's x input
 
 Constructor:
 public LinearEquation(int x, int y, int x2, int y2)
-public LinearEquation(double x3)
+public LinearEquation(double int x, int y, int x2, int y2, double x3)
 
 Methods:
 public double calculateDistance()
 This method will calculate the distance between the two points.
 Return the result to the nearest hundredth as a double
 
-public double calculateInfo()
-This method will calculate the slope and the y-intercept of the linear equation
+public double calculateSlope()
+This method will calculate the slope
 Return results to the nearest hundredth as a double
 
-public String toString()
-This method puts the local variables(y-intercept, slope) into a slope-intercept form.
-This method can return the x and y coordinate,slope, y-intercept,the distance between the two points,and the equation of the line in slope-intercept form as a String.
+public String slope()
+This method return the value of the slope in String
 
-public String calculateCoordinatePoint()
+public int calcYInt()
+This method calculate the y-intercept
+return the result in integer form
+
+public String toString()
+1. return the coordinate of the first pair and the second pair.
+2.return the slope of the line.
+3.return the y-intercept of the line.
+4.return the slope-intercept form of the line.
+5.return the distance between the two points.
+
+public String calcCP()
 This method calculate the coordinate point corresponding to the instance variable x-3
 Return the result as a string.
 
