@@ -26,7 +26,7 @@ public class LinearEquation {
     }
 
     public double calcSlope() {
-        double s = (y2 - y) / (x2 - x);
+        double s = (double)(y2-y)/(x2-x);
         return s;
     }
         public String slope(){
@@ -43,7 +43,7 @@ public class LinearEquation {
     public String toString(){
 
         String infoC="First Pair: (" + x + "," + y + ")\n" + "Second Pair: (" + x2 + "," + y2 + ")\n";
-        String infoS="Slope of line: " + calcSlope() + "\n";
+        String infoS="Slope of the line: " + String.format("%.2f",calcSlope()) + "\n";
         String infoY="Y-intercept: " + calcYInt() + "\n";
         String infoSl="Slope intercept form: " + "y= " +  slope()  + "x + " + calcYInt() + "\n";
         String infoD="The distance between points: " + String.format("%.2f",calcDistance())  + "\n";
