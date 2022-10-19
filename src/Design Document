@@ -39,19 +39,23 @@ Return the result as a string.
 
 
 EquationRunner.java
-1.Welcome the user, and ask them to enter first coordinate pair in coordinate form(String)
+1.Welcome the user, and ask them to enter first and second coordinate pair in coordinate form(String)
 
-2.Create a new LinearEquation object.
+2.Extract the number from user's input and stored the coordinates into integer.
 
-3.Calculate and print the following:
+3.Create a new object called coordinate.
+
+4.Calculate and print the following:
 a.The two original points
 b.the equation of the line in slope-intercept form
 c.the slope
 d.the y-intercept
 e.the distance between two points
 
-4. ask the user to enter an x-value(instance variable x3)
+5. ask the user to enter an x-value and stored it(instance variable x3)
 
-5.calculate the y-coordinate by using slope-intercept form.
+6.Create another object called xCoordinate.
 
-6.prints out the third coordinate point.
+7.calculate the y-coordinate by using slope-intercept form.
+
+8.prints out the third coordinate point.
