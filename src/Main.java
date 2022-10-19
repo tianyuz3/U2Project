@@ -4,7 +4,7 @@ public class Main {
     {
         Scanner c= new Scanner(System.in);
         Scanner d=new Scanner(System.in);
-        System.out.println("PLease enter the first coordinate pair!: ");
+        System.out.println("Please enter the first coordinate pair!: ");
         String c1=c.nextLine();
 
 

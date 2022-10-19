@@ -54,7 +54,7 @@ public class LinearEquation {
 
     public String calcCP(){
         double c= calcSlope()*x3+calcYInt();
-        String cP="Solved coordinate point is: " + "(" + x3 + "," + c + ")";
+        String cP="Solved coordinate point is: " + "(" + String.format("%.2f",x3) + "," + String.format("%.2f",c )+ ")";
         return cP;
     }
 }
