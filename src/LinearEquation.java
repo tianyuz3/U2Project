@@ -29,12 +29,12 @@ public class LinearEquation {
         double s = (double)(y2-y)/(x2-x);
         return s;
     }
-        public String slope(){
-            int dX=x2-x;
-            int dY=y2-y;
-            String s= dY + "/" + dX;
-            return s;
-        }
+    public String slope(){
+        int dX=x2-x;
+        int dY=y2-y;
+        String s= dY + "/" + dX;
+        return s;
+    }
 
     public int calcYInt(){
         int yin=(int)(y-calcSlope()*x);
@@ -50,7 +50,7 @@ public class LinearEquation {
         return infoC + infoS + infoY + infoSl+infoD;
 
 
-}
+    }
 
     public String calcCP(){
         double c= calcSlope()*x3+calcYInt();

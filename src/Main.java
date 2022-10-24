@@ -12,14 +12,14 @@ public class Main {
         String c2=d.nextLine();
 
         String x1=c1.substring(1,c1.indexOf(","));
-        String y1=c1.substring(c1.indexOf(",") + 1,c1.indexOf(")"));
+        String y1=c1.substring(c1.indexOf(",") + 1 ,c1.indexOf(")"));
 
         String x2=c2.substring(1,c2.indexOf(","));
-        String y2=c2.substring(c1.indexOf(",") + 1,c2.indexOf(")"));
-        Integer xF=Integer.valueOf(x1);
-        Integer yF=Integer.valueOf(y1);
-        Integer xS=Integer.valueOf(x2);
-        Integer yS=Integer.valueOf(y2);
+        String y2=c2.substring(c2.indexOf(",") + 1,c2.indexOf(")"));
+        int xF=Integer.parseInt(x1);
+        int yF=Integer.parseInt(y1);
+        int xS=Integer.parseInt(x2);
+        int yS=Integer.parseInt(y2);
 
         LinearEquation coordinate=new LinearEquation(xF,yF,xS,yS);
         System.out.println(coordinate.toString());
